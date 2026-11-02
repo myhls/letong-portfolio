@@ -4,7 +4,7 @@ The website is a static site. The `site/` directory is the deployment artifact a
 
 ## GitHub Pages
 
-1. Create a public repository named `letong-portfolio` under the `myhls` account.
+1. Create a public repository for the portfolio under the `myhls` account.
 2. Add it as the `origin` remote and push the `main` branch.
 3. Open the repository settings, then `Pages`.
 4. Under `Build and deployment`, select `GitHub Actions` as the source.
@@ -13,10 +13,10 @@ The website is a static site. The `site/` directory is the deployment artifact a
 The expected interim URL is:
 
 ```text
-https://myhls.github.io/letong-portfolio/
+https://myhls.github.io/<repository-name>/
 ```
 
-The workflow uploads only `site/`, so local source notes and the content workbook are not exposed through GitHub Pages.
+The workflow uploads only `site/`, so local source notes and the content workbook are not exposed through GitHub Pages. GitHub Pages must be enabled once in repository settings before using the workflow.
 
 ## Local Preview
 

@@ -1,4 +1,4 @@
-# 隋乐桐个人求职网站
+# 1111号个人求职网站
 
 当前版本：`v0.5`（长期维护起点）
 
@@ -42,7 +42,7 @@ $env:PORT=8080; node server.mjs
 - 页面结构：`site/index.html`
 - 全局样式：`site/css/styles.css`
 - 项目详情数据与交互：`site/js/app.js`
-- 简历：`site/assets/隋乐桐_游戏策划简历.pdf`
+- 简历：`site/assets/1111号_游戏策划简历.pdf`
 - 演示视频：`site/assets/system-demo.mp4`
 - 简历 HTML 源文件：`sources/resume-print.html`
 - 内容采集表：`outputs/个人网站内容采集表.xlsx`

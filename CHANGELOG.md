@@ -9,3 +9,5 @@
 - Updated availability to Shenzhen in November 2026 and other regions by the end of December 2026.
 - Added a public-facing resume PDF and an editable content collection workbook.
 - Added GitHub Pages deployment automation.
+- Replaced the public display name with the anonymized label "1111号".
+- Removed automatic Pages enablement because it requires a separate elevated token; Pages is enabled once in repository settings.

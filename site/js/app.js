@@ -629,7 +629,7 @@ function renderProject(slug) {
   navLinks.forEach((link) => link.classList.remove("is-active"));
   document.querySelector('.site-nav a[data-section="projects"]')?.classList.add("is-active");
   window.scrollTo({ top: 0, behavior: "instant" });
-  document.title = `${project.title}｜隋乐桐`;
+  document.title = `${project.title}｜1111号`;
   return true;
 }
 
@@ -642,12 +642,12 @@ function showHome(sectionId) {
   });
 
   const titles = {
-    home: "隋乐桐｜系统策划职业档案",
-    projects: "项目｜隋乐桐",
-    demo: "系统演示｜隋乐桐",
-    about: "成长档案｜隋乐桐",
-    content: "创作与社群｜隋乐桐",
-    contact: "合作邀请｜隋乐桐"
+    home: "1111号｜系统策划职业档案",
+    projects: "项目｜1111号",
+    demo: "系统演示｜1111号",
+    about: "成长档案｜1111号",
+    content: "创作与社群｜1111号",
+    contact: "合作邀请｜1111号"
   };
 
   document.title = titles[sectionId] || titles.home;

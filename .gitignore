@@ -8,6 +8,7 @@ tmp/
 .env
 .env.*
 !.env.example
+.gh-config/
 *.pem
 *.key
 
