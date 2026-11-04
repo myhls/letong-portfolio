@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.6.1 - 2026-11-04
+
+- Added versioned CSS and JavaScript URLs to prevent stale GitHub Pages assets after deployment.
+- Fixed the journal entry rendering with cached pre-journal styles.
+
 ## v0.6 - 2026-11-04
 
 - Added the standalone Game Design Journal landing page and article pages.
