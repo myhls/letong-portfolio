@@ -1,9 +1,10 @@
 {
   "name": "agent-1111-portfolio",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "private": true,
   "type": "module",
   "scripts": {
+    "build:journal": "node scripts/build-journal.mjs",
     "dev": "node server.mjs",
     "start": "node server.mjs"
   },

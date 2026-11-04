@@ -1,6 +1,6 @@
 # 1111号个人求职网站
 
-当前版本：`v0.5`（长期维护起点）
+当前版本：`v0.6`（Game Design Journal 首发）
 
 面向游戏与内容岗位招聘者的零依赖静态作品集。包含顶部标签式主页、6 个项目详情、创作与社群实践、简历下载与联系方式。
 
@@ -46,5 +46,16 @@ $env:PORT=8080; node server.mjs
 - 演示视频：`site/assets/system-demo.mp4`
 - 简历 HTML 源文件：`sources/resume-print.html`
 - 内容采集表：`outputs/个人网站内容采集表.xlsx`
+
+## Game Design Journal
+
+知识库源文件位于 `content/journal/`。文章元数据由 `manifest.json` 管理，正文使用
+Markdown，生成器会输出独立静态页面到 `site/journal/`。
+
+```powershell
+node scripts/build-journal.mjs
+```
+
+生成后访问 `http://127.0.0.1:4173/journal/` 进行预览。
 
 页面未公开手机号和住址，不包含内部数据或未授权素材。

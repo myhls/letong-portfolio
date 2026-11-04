@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "site": {
+    "title": "Game Design Journal",
+    "subtitle": "游戏策划观察日记",
+    "locale": "zh-CN",
+    "publicBasePath": "/letong-portfolio/",
+    "journalPublicPath": "/letong-portfolio/journal/"
+  },
+  "statusValues": {
+    "planned": "仅规划标题，正文尚未开始",
+    "awaiting-content": "已有空白文章骨架，等待正式内容",
+    "draft": "正在整理和审校",
+    "review": "文章和图片已齐备，等待发布检查",
+    "published": "已公开发布",
+    "archived": "不再作为当前文章展示"
+  },
+  "contentRules": {
+    "sourceOfTruth": "Markdown 保存正文，JSON 保存元数据",
+    "contentFileRequiredFor": ["draft", "review", "published"],
+    "preserveDiscussion": true,
+    "requireImageAlt": true,
+    "requireImageSource": true,
+    "allowUpdateInPlace": true
+  },
+  "categories": [
+    {
+      "id": "reward",
+      "order": 1,
+      "title": "奖励系统",
+      "englishTitle": "REWARD SYSTEM",
+      "summary": "研究奖励如何驱动玩家行为，以及不同奖励之间如何形成关系。",
+      "expectedArticleCount": 3
+    },
+    {
+      "id": "feedback",
+      "order": 2,
+      "title": "反馈系统",
+      "englishTitle": "FEEDBACK SYSTEM",
+      "summary": "研究游戏如何向玩家传递信息，并帮助玩家确认操作结果。",
+      "expectedArticleCount": 1
+    },
+    {
+      "id": "growth",
+      "order": 3,
+      "title": "生长系统",
+      "englishTitle": "GROWTH SYSTEM",
+      "summary": "研究玩家如何通过能力、数值、策略和认知变化获得成长。",
+      "expectedArticleCount": 1
+    }
+  ],
+  "articles": [
+    {
+      "id": "reward-day-01",
+      "slug": "how-rewards-shape-behavior",
+      "title": "奖励系统：为什么游戏要给玩家发奖励？",
+      "category": "reward",
+      "date": "2026-11-04",
+      "updatedAt": "2026-11-04",
+      "summary": "从《哈迪斯》出发，理解奖励类型、机会成本与边际效用，并通过奖励选择和下一关设计练习，思考奖励如何影响玩家后续的策略与行为。",
+      "tags": [
+        "奖励系统",
+        "玩家行为",
+        "机会成本",
+        "边际效用",
+        "关卡设计",
+        "系统策划"
+      ],
+      "cover": null,
+      "status": "published",
+      "contentFile": "content/journal/reward/reward-how-rewards-shape-behavior.md",
+      "images": []
+    },
+    {
+      "id": "reward-synergy-builds",
+      "slug": "reward-synergy-builds",
+      "title": "奖励联动：如何让不同奖励形成构筑？",
+      "category": "reward",
+      "date": null,
+      "updatedAt": null,
+      "summary": "",
+      "tags": [],
+      "cover": null,
+      "status": "planned",
+      "contentFile": "content/journal/reward/reward-synergy-builds.md",
+      "images": []
+    },
+    {
+      "id": "reward-must-pick-balance",
+      "slug": "reward-must-pick-balance",
+      "title": "必选道具与平衡：如何避免玩家永远只选最优解？",
+      "category": "reward",
+      "date": null,
+      "updatedAt": null,
+      "summary": "",
+      "tags": [],
+      "cover": null,
+      "status": "planned",
+      "contentFile": "content/journal/reward/reward-must-pick-balance.md",
+      "images": []
+    },
+    {
+      "id": "feedback-confirm-player-actions",
+      "slug": "confirm-player-actions",
+      "title": "玩家为什么需要知道自己做对了什么？",
+      "category": "feedback",
+      "date": null,
+      "updatedAt": null,
+      "summary": "",
+      "tags": [],
+      "cover": null,
+      "status": "planned",
+      "contentFile": "content/journal/feedback/feedback-confirm-player-actions.md",
+      "images": []
+    },
+    {
+      "id": "growth-purpose-of-growth",
+      "slug": "purpose-of-growth",
+      "title": "成长的目的是什么？",
+      "category": "growth",
+      "date": null,
+      "updatedAt": null,
+      "summary": "",
+      "tags": [],
+      "cover": null,
+      "status": "planned",
+      "contentFile": "content/journal/growth/growth-purpose-of-growth.md",
+      "images": []
+    }
+  ]
+}

@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.6 - 2026-11-04
+
+- Added the standalone Game Design Journal landing page and article pages.
+- Published the first reward-system article with its original discussion and revision process intact.
+- Added a Markdown and JSON content pipeline with image metadata and link-path validation.
+- Added a journal entry point to the existing growth view without changing the site router.
+- Kept the existing GitHub Pages deployment flow and published only generated static files.
+
 ## v0.5 - 2026-11-02
 
 - Reworked the website into a tabbed career archive with role, project, demo, growth, content and contact views.
