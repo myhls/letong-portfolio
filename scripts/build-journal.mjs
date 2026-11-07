@@ -337,7 +337,7 @@ function pageShell({ title, description, depth, content }) {
     <meta property="og:type" content="article" />
     <title>${escapeHtml(title)}</title>
     <link rel="icon" href="${rootPrefix}assets/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="${rootPrefix}css/journal.css?v=0.7.0" />
+    <link rel="stylesheet" href="${rootPrefix}css/journal.css?v=0.7.1" />
   </head>
   <body>
     <header class="journal-header">

@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.7.1 - 2026-11-07
+
+- Standardized the Journal category display name from "生长系统" to "成长系统".
+
 ## v0.7.0 - 2026-11-07
 
 - Published Journal Day 02–08 while preserving the original discussion and design reasoning.
