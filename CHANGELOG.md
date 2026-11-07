@@ -1,5 +1,12 @@
 # Changelog
 
+## v0.7.0 - 2026-11-07
+
+- Published Journal Day 02–08 while preserving the original discussion and design reasoning.
+- Completed the reward, feedback and growth topic counts with eight published articles.
+- Updated the Journal homepage to show Day 08 as the latest article and to use the "从系统拆解到原创设计" introduction.
+- Prevented duplicate article titles from appearing below each article hero.
+
 ## v0.6.1 - 2026-11-04
 
 - Added versioned CSS and JavaScript URLs to prevent stale GitHub Pages assets after deployment.

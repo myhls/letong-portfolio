@@ -46,7 +46,7 @@
       "title": "生长系统",
       "englishTitle": "GROWTH SYSTEM",
       "summary": "研究玩家如何通过能力、数值、策略和认知变化获得成长。",
-      "expectedArticleCount": 1
+      "expectedArticleCount": 4
     }
   ],
   "articles": [
@@ -72,59 +72,143 @@
       "images": []
     },
     {
-      "id": "reward-synergy-builds",
+      "id": "reward-day-02",
       "slug": "reward-synergy-builds",
-      "title": "奖励联动：如何让不同奖励形成构筑？",
+      "title": "奖励之间的联动：如何让玩家主动选择不同的奖励？",
       "category": "reward",
-      "date": null,
-      "updatedAt": null,
-      "summary": "",
-      "tags": [],
+      "date": "2026-11-07",
+      "updatedAt": "2026-11-07",
+      "summary": "从三种战斗奖励出发，讨论奖励机会成本、风险收益与金币、生命和雷电能力之间的构筑联动，尝试让不同奖励相互支持。",
+      "tags": [
+        "奖励系统",
+        "构筑联动",
+        "风险收益",
+        "资源设计",
+        "系统策划"
+      ],
       "cover": null,
-      "status": "planned",
+      "status": "published",
       "contentFile": "content/journal/reward/reward-synergy-builds.md",
       "images": []
     },
     {
-      "id": "reward-must-pick-balance",
+      "id": "reward-day-03",
       "slug": "reward-must-pick-balance",
-      "title": "必选道具与平衡：如何避免玩家永远只选最优解？",
+      "title": "必选道具：当一种选择变成唯一正确答案",
       "category": "reward",
-      "date": null,
-      "updatedAt": null,
-      "summary": "",
-      "tags": [],
+      "date": "2026-11-07",
+      "updatedAt": "2026-11-07",
+      "summary": "围绕能量转换器、生命结晶与雷鸣共振，讨论 Must-pick 风险、专精与通用价值，以及道具使用率与平衡判断。",
+      "tags": [
+        "奖励系统",
+        "Must-pick",
+        "道具平衡",
+        "选择空间",
+        "系统策划"
+      ],
       "cover": null,
-      "status": "planned",
+      "status": "published",
       "contentFile": "content/journal/reward/reward-must-pick-balance.md",
       "images": []
     },
     {
-      "id": "feedback-confirm-player-actions",
-      "slug": "confirm-player-actions",
-      "title": "玩家为什么需要知道自己做对了什么？",
+      "id": "feedback-day-04",
+      "slug": "feedback-system",
+      "title": "游戏反馈系统：玩家为什么需要知道自己做对了什么？",
       "category": "feedback",
-      "date": null,
-      "updatedAt": null,
-      "summary": "",
-      "tags": [],
+      "date": "2026-11-07",
+      "updatedAt": "2026-11-07",
+      "summary": "从《哈迪斯》《鬼泣5》与蓄力斩练习出发，分析系统变化与感知变化、反馈层次，以及玩家不使用技能时的机制原因。",
+      "tags": [
+        "反馈系统",
+        "动作表现",
+        "感知反馈",
+        "蓄力斩",
+        "系统策划"
+      ],
       "cover": null,
-      "status": "planned",
-      "contentFile": "content/journal/feedback/feedback-confirm-player-actions.md",
+      "status": "published",
+      "contentFile": "content/journal/feedback/feedback-system.md",
       "images": []
     },
     {
-      "id": "growth-purpose-of-growth",
-      "slug": "purpose-of-growth",
-      "title": "成长的目的是什么？",
+      "id": "growth-day-05",
+      "slug": "growth-skill-design",
+      "title": "成长系统：如何通过技能设计创造更多策略选择？",
       "category": "growth",
-      "date": null,
-      "updatedAt": null,
-      "summary": "",
-      "tags": [],
+      "date": "2026-11-07",
+      "updatedAt": "2026-11-07",
+      "summary": "通过烈焰斩、破甲、疾行步三种技能，讨论技能定位、使用场景、环境互动、代价与协同如何拓展玩家解法。",
+      "tags": [
+        "成长系统",
+        "技能设计",
+        "策略空间",
+        "技能协同",
+        "系统策划"
+      ],
       "cover": null,
-      "status": "planned",
-      "contentFile": "content/journal/growth/growth-purpose-of-growth.md",
+      "status": "published",
+      "contentFile": "content/journal/growth/growth-skill-design.md",
+      "images": []
+    },
+    {
+      "id": "growth-day-06",
+      "slug": "growth-skill-balance",
+      "title": "成长系统：技能平衡与玩家的策略自由度",
+      "category": "growth",
+      "date": "2026-11-07",
+      "updatedAt": "2026-11-07",
+      "summary": "以三种技能的使用率为例，讨论情境化平衡、最优解、可行解和非最优构筑的生存空间。",
+      "tags": [
+        "成长系统",
+        "技能平衡",
+        "情境设计",
+        "玩家能动性",
+        "系统策划"
+      ],
+      "cover": null,
+      "status": "published",
+      "contentFile": "content/journal/growth/growth-skill-balance.md",
+      "images": []
+    },
+    {
+      "id": "growth-day-07",
+      "slug": "growth-progression-builds",
+      "title": "成长曲线与流派构筑：如何让玩家持续感受到成长？",
+      "category": "growth",
+      "date": "2026-11-07",
+      "updatedAt": "2026-11-07",
+      "summary": "讨论数值与机制成长、技能点曲线、职业融合和专精与混合流派，如何让玩家持续感受到成长与自主构筑。",
+      "tags": [
+        "成长系统",
+        "成长曲线",
+        "流派构筑",
+        "技能树",
+        "系统策划"
+      ],
+      "cover": null,
+      "status": "published",
+      "contentFile": "content/journal/growth/growth-progression-builds.md",
+      "images": []
+    },
+    {
+      "id": "growth-day-08",
+      "slug": "growth-resource-design",
+      "title": "成长资源设计：玩家为什么愿意持续养成？",
+      "category": "growth",
+      "date": "2026-11-07",
+      "updatedAt": "2026-11-07",
+      "summary": "从金币、技能点和突破材料出发，讨论资源投放与消耗、成长成本曲线、获取死锁，以及专精与多样型路线。",
+      "tags": [
+        "成长系统",
+        "资源设计",
+        "成长曲线",
+        "资源投放",
+        "系统策划"
+      ],
+      "cover": null,
+      "status": "published",
+      "contentFile": "content/journal/growth/growth-resource-design.md",
       "images": []
     }
   ]

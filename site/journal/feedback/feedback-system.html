@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="从《哈迪斯》《鬼泣5》与蓄力斩练习出发，分析系统变化与感知变化、反馈层次，以及玩家不使用技能时的机制原因。" />
+    <meta name="theme-color" content="#e6f9fd" />
+    <meta property="og:title" content="游戏反馈系统：玩家为什么需要知道自己做对了什么？｜1111号" />
+    <meta property="og:description" content="从《哈迪斯》《鬼泣5》与蓄力斩练习出发，分析系统变化与感知变化、反馈层次，以及玩家不使用技能时的机制原因。" />
+    <meta property="og:type" content="article" />
+    <title>游戏反馈系统：玩家为什么需要知道自己做对了什么？｜1111号</title>
+    <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../../css/journal.css?v=0.7.0" />
+  </head>
+  <body>
+    <header class="journal-header">
+      <div class="journal-header-inner">
+        <a class="journal-brand" href="../../index.html#home" aria-label="1111号个人主页">
+          <span class="journal-brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 48 48">
+              <path d="M10 31c-4 0-6-3-5-7 1-3 4-5 7-4 1-6 6-10 12-9 6 1 9 5 9 10 4 0 7 3 7 6 0 4-3 6-7 6H10Z" />
+              <path d="M17 35h16" />
+            </svg>
+          </span>
+          <span>
+            <strong>1111号</strong>
+            <small>GAME DESIGN JOURNAL</small>
+          </span>
+        </a>
+        <nav class="journal-nav" aria-label="Journal 导航">
+          <a href="../../index.html#about">成长档案</a>
+          <a href="../../journal/index.html">观察日记</a>
+        </nav>
+      </div>
+    </header>
+    <main class="article-main">
+    <nav class="article-breadcrumb" aria-label="面包屑">
+      <a href="../index.html">观察日记</a>
+      <span>/</span>
+      <a href="../index.html#feedback">反馈系统</a>
+    </nav>
+    <header class="article-hero">
+      <p class="journal-kicker">FEEDBACK SYSTEM / DAY 04</p>
+      <h1>游戏反馈系统：玩家为什么需要知道自己做对了什么？</h1>
+      <p class="article-summary">从《哈迪斯》《鬼泣5》与蓄力斩练习出发，分析系统变化与感知变化、反馈层次，以及玩家不使用技能时的机制原因。</p>
+      <div class="article-meta">
+        <span>2026-11-07</span>
+        <span>反馈系统</span>
+        <span>约 4 分钟阅读</span>
+      </div>
+      <div class="journal-tags"><span>反馈系统</span><span>动作表现</span><span>感知反馈</span><span>蓄力斩</span><span>系统策划</span></div>
+    </header>
+    <div class="article-layout">
+      <article class="article-content"><p><strong>今日主题：游戏反馈与动作表现</strong><br><strong>核心案例：《哈迪斯》与《鬼泣5》</strong></p>
+<hr>
+<h2 id="一-什么是游戏反馈">一、什么是游戏反馈？</h2>
+<p>游戏反馈，是游戏向玩家传达其行为结果的方式。</p>
+<p>玩家按下一个按键、释放一个技能、击败一个敌人之后，需要通过反馈理解：刚才发生了什么？操作是否成功？效果有多强？</p>
+<p>常见反馈可以分为：</p>
+<div class="article-table-wrap">
+  <table>
+    <thead>
+      <tr><th>反馈类型</th><th>常见表现</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>视觉反馈</td><td>特效、颜色变化、镜头表现、敌人受击动作</td></tr>
+      <tr><td>听觉反馈</td><td>音效、提示音、音调变化</td></tr>
+      <tr><td>数值反馈</td><td>伤害数字、治疗数值、状态图标</td></tr>
+      <tr><td>操作反馈</td><td>震动、输入响应、镜头运动等</td></tr>
+    </tbody>
+  </table>
+</div>
+<p>反馈不只是让游戏“看起来更爽”，它还帮助玩家理解规则、确认操作结果，并建立行为与结果之间的联系。</p>
+<h2 id="二-系统发生变化-不代表玩家感受到了变化">二、系统发生变化，不代表玩家感受到了变化</h2>
+<p>以《哈迪斯》为例，假设玩家获得一个祝福，它提高了某种攻击的实际伤害，但没有明显的视觉、听觉或数值变化。</p>
+<p>从系统角度看，角色确实变强了；但从玩家体验来看，玩家可能根本没有意识到变化。</p>
+<p>因此需要区分：</p>
+<ul><li><strong>系统变化：</strong> 后台数值或机制确实发生了变化；</li><li><strong>感知变化：</strong> 玩家能够观察、理解并感受到变化。</li></ul>
+<p>如果成长系统只改变后台数值，却没有提供足够反馈，玩家就可能无法建立“我获得了这个能力，所以我变强了”的认知。</p>
+<h2 id="三-表现力与信息量-以-鬼泣5-为例">三、表现力与信息量：以《鬼泣5》为例</h2>
+<p>《鬼泣5》通过镜头、特效、音效、震动和连招评价等方式，让动作具有鲜明的表现力。</p>
+<p>但并不是所有动作都需要同样强烈的反馈。如果普通攻击也使用夸张的镜头特写和大量特效，玩家可能会觉得信息过载，甚至影响操作节奏。</p>
+<p>可以根据动作的重要程度分配反馈强度：</p>
+<ol><li>普通攻击：提供清晰、简洁的基础反馈；</li><li>完美蓄力：增加更明显的视觉与听觉提示；</li><li>特殊终结技：可以使用更强烈的镜头和表现效果。</li></ol>
+<p>反馈的数量不等于反馈的有效性。关键是让玩家在正确的时机收到足够清晰的信息。</p>
+<h2 id="四-反馈的三个层次">四、反馈的三个层次</h2>
+<p>可以将动作反馈理解为三个层次：</p>
+<div class="article-table-wrap">
+  <table>
+    <thead>
+      <tr><th>层次</th><th>主要回答的问题</th><th>例子</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>基础反馈</td><td>发生了什么？</td><td>命中音效、敌人受击动作</td></tr>
+      <tr><td>强化反馈</td><td>效果有多强？</td><td>更明显的特效、伤害数字</td></tr>
+      <tr><td>表现反馈</td><td>我的操作有多精彩？</td><td>镜头表现、连招评价、特殊演出</td></tr>
+    </tbody>
+  </table>
+</div>
+<p>并不是所有游戏都需要完整的三个层次。具体使用哪些反馈，应该根据游戏类型、操作节奏和目标体验决定。</p>
+<h2 id="五-原创练习-设计一个蓄力斩的反馈链">五、原创练习：设计一个蓄力斩的反馈链</h2>
+<p>假设玩家可以使用蓄力斩技能。我们比较三种方案：</p>
+<ul><li>A：只有伤害数字变化；</li><li>B：只有视觉效果变化，但实际伤害没有区别；</li><li>C：视觉、听觉、动作表现和数值反馈相互配合。</li></ul>
+<p>我选择 C。</p>
+<p>一套完整的反馈链可以这样设计：</p>
+<ol><li><strong>开始蓄力：</strong> 出现蓄力特效，音效逐渐增强；</li><li><strong>蓄力完成：</strong> 特效达到最明显状态，播放完成提示音；</li><li><strong>释放技能：</strong> 角色做出明确动作，配合释放音效和适度镜头反馈；</li><li><strong>命中敌人：</strong> 敌人出现受击反应，同时显示伤害数值。</li></ol>
+<p>这样玩家不仅知道技能已经释放，也能理解蓄力是否完成、命中效果如何。</p>
+<h2 id="六-进阶问题-为什么玩家不使用更强的蓄力斩">六、进阶问题：为什么玩家不使用更强的蓄力斩？</h2>
+<p>假设蓄力斩伤害更高，视觉效果也更好，但玩家仍然更喜欢普通攻击。</p>
+<p>不能直接得出“玩家没有理解技能”的结论。还需要检查：</p>
+<ul><li>蓄力需要的时间是否过长？</li><li>蓄力过程中是否容易被打断？</li><li>普通攻击是否已经足够应付大部分敌人？</li><li>蓄力斩的收益是否足以补偿风险？</li><li>蓄力是否限制移动或打断连招？</li><li>玩家是否能清楚感受到蓄力斩的优势？</li></ul>
+<p>玩家不使用某个技能，可能不是因为反馈不够，也可能是技能本身没有提供足够的使用理由。</p>
+<h2 id="七-今日学习总结">七、今日学习总结</h2>
+<ul><li>反馈帮助玩家理解操作结果和游戏规则；</li><li>系统变化不等于玩家能够感知变化；</li><li>视觉、听觉、数值和操作反馈可以相互配合；</li><li>反馈强度应与动作的重要程度相匹配；</li><li>玩家不使用某个机制时，需要同时检查反馈和机制本身的价值。</li></ul>
+<h3 id="今日核心设计观点">今日核心设计观点</h3>
+<p><strong>反馈不仅要告诉玩家“发生了什么”，还要帮助玩家理解“为什么这件事值得”。</strong></p>
+<p><strong>学习练习反馈：模拟评分 89/100。该分数仅用于本次学习复盘，不代表行业统一评价标准。</strong></p></article>
+      <aside class="article-aside">
+        <span>ARTICLE FILE</span>
+        <dl>
+          <div><dt>专题</dt><dd>反馈系统</dd></div>
+          <div><dt>首次整理</dt><dd>2026-11-07</dd></div>
+          <div><dt>最近更新</dt><dd>2026-11-07</dd></div>
+        </dl>
+        <a href="../index.html">返回 Journal</a>
+      </aside>
+    </div>
+  </main>
+    <footer class="journal-footer">
+      <span>1111号 · Game Design Journal</span>
+      <a href="../../index.html#about">返回成长档案</a>
+    </footer>
+  </body>
+</html>

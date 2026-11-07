@@ -227,6 +227,17 @@ function articleOutputPath(article) {
   return resolve(outputRoot, article.category, `${article.slug}.html`);
 }
 
+function articleDay(article) {
+  return Number(article.id.match(/day-(\d+)/i)?.[1] || 0);
+}
+
+function stripDuplicateLeadingTitle(markdown, title) {
+  const source = markdown.trimStart();
+  const firstLine = source.split("\n", 1)[0].trim();
+  if (firstLine.replace(/^##\s+/, "") !== title) return markdown;
+  return source.slice(firstLine.length).trimStart();
+}
+
 async function listFilesRecursive(directory) {
   const entries = await readdir(directory, { withFileTypes: true });
   const files = [];
@@ -326,7 +337,7 @@ function pageShell({ title, description, depth, content }) {
     <meta property="og:type" content="article" />
     <title>${escapeHtml(title)}</title>
     <link rel="icon" href="${rootPrefix}assets/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="${rootPrefix}css/journal.css?v=0.6.1" />
+    <link rel="stylesheet" href="${rootPrefix}css/journal.css?v=0.7.0" />
   </head>
   <body>
     <header class="journal-header">
@@ -386,10 +397,11 @@ function renderArticleCard(article) {
 }
 
 function renderIndex(manifest) {
-  const published = manifest.articles
-    .filter((article) => article.status === "published")
-    .sort((a, b) => b.date.localeCompare(a.date));
-  const latest = published[0];
+  const published = manifest.articles.filter((article) => article.status === "published");
+  const latest = [...published].sort((a, b) => {
+    const dateOrder = b.date.localeCompare(a.date);
+    return dateOrder || articleDay(b) - articleDay(a);
+  })[0];
   const categories = [...manifest.categories].sort((a, b) => a.order - b.order);
 
   const categorySections = categories
@@ -425,7 +437,7 @@ function renderIndex(manifest) {
           "0"
         )} PUBLISHED</p>
         <h1>游戏策划<br>观察日记</h1>
-        <p>保留真实问题、初始判断、反例和修正过程。这里记录的是我如何逐步形成设计判断，而不是把知识整理成没有过程的答案。</p>
+        <p>从系统拆解到原创设计。这里保留真实问题、初始判断、反例和修正过程，记录我如何逐步形成设计判断，而不是把知识整理成没有过程的答案。</p>
       </div>
       <aside class="journal-hero-note">
         <span>LATEST UPDATE</span>
@@ -452,7 +464,7 @@ function renderIndex(manifest) {
 
 function renderArticlePage(manifest, article, bodyHtml) {
   const category = categoryName(manifest, article.category);
-  const day = article.id.match(/day-(\d+)/i)?.[1] || "01";
+  const day = String(articleDay(article) || 1).padStart(2, "0");
   const tags = article.tags
     .map((tag) => `<span>${escapeHtml(tag)}</span>`)
     .join("");
@@ -509,10 +521,11 @@ async function main() {
     const markdown = await readFile(resolve(root, article.contentFile), "utf8");
     const body = markdown.replace(/<!--[\s\S]*?-->/g, "").trim();
     assert(body, `${article.id}: 已发布文章正文为空`);
+    const displayMarkdown = stripDuplicateLeadingTitle(body, article.title);
     renderedArticles.push({
       article,
       markdown,
-      html: renderArticlePage(manifest, article, markdownToHtml(markdown))
+      html: renderArticlePage(manifest, article, markdownToHtml(displayMarkdown))
     });
   }
 
