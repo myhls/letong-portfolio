@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.8.1 - 2026-11-14
+
+- Replaced the warm-white and teal palette with a charcoal, warm-white and crimson visual system.
+- Updated the main portfolio, Journal, favicon, manifest and 404 page to the black-and-red theme.
+- Kept the simplified layout, project data, navigation and Journal content unchanged.
+
 ## v0.8.0 - 2026-11-14
 
 - Replaced the dense dashboard-style homepage with a clean two-column editorial layout.

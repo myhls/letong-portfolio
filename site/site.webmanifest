@@ -4,8 +4,8 @@
   "description": "系统策划、互动设计与 AI 应用作品集",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#fbfeff",
-  "theme_color": "#e6f9fd",
+  "background_color": "#0d0d0e",
+  "theme_color": "#0d0d0e",
   "icons": [
     {
       "src": "assets/favicon.svg",
