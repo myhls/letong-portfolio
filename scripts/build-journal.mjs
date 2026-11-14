@@ -331,13 +331,14 @@ function pageShell({ title, description, depth, content }) {
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="${escapeHtml(description)}" />
-    <meta name="theme-color" content="#e6f9fd" />
+    <meta name="theme-color" content="#f7f6f2" />
     <meta property="og:title" content="${escapeHtml(title)}" />
     <meta property="og:description" content="${escapeHtml(description)}" />
     <meta property="og:type" content="article" />
     <title>${escapeHtml(title)}</title>
     <link rel="icon" href="${rootPrefix}assets/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="${rootPrefix}css/journal.css?v=0.7.1" />
+    <link rel="stylesheet" href="${rootPrefix}css/journal.css?v=0.8.0" />
+    <link rel="stylesheet" href="${rootPrefix}css/simple-journal.css?v=0.8.0" />
   </head>
   <body>
     <header class="journal-header">

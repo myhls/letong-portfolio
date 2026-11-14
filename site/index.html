@@ -7,7 +7,7 @@
       name="description"
       content="1111号的个人求职网站，聚焦游戏系统策划、互动设计与 AI 应用。"
     />
-    <meta name="theme-color" content="#e6f9fd" />
+    <meta name="theme-color" content="#f7f6f2" />
     <meta property="og:title" content="1111号｜系统策划职业档案" />
     <meta
       property="og:description"
@@ -18,8 +18,9 @@
     <title>1111号｜系统策划职业档案</title>
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="manifest" href="site.webmanifest" />
-    <link rel="stylesheet" href="css/styles.css?v=0.7.1" />
-    <link rel="stylesheet" href="css/game.css?v=0.7.1" />
+    <link rel="stylesheet" href="css/styles.css?v=0.8.0" />
+    <link rel="stylesheet" href="css/game.css?v=0.8.0" />
+    <link rel="stylesheet" href="css/simple.css?v=0.8.0" />
   </head>
   <body>
     <a class="skip-link" href="#main">跳到主要内容</a>
@@ -76,7 +77,50 @@
     <main id="main">
       <div id="home-view">
         <section class="game-home app-view is-active" id="home" data-view="home">
-          <div class="game-layout">
+          <div class="simple-home">
+            <div class="simple-home-copy">
+              <h1>
+                设计有意义的系统，<br />
+                <span>创造值得体验的世界。</span>
+              </h1>
+              <p class="simple-lead">
+                我是1111号，一名关注玩法规则、玩家体验与视觉表达的策划。
+                擅长把复杂机制整理成可执行的系统，也喜欢用绘画、内容和原型把想法讲清楚。
+              </p>
+              <div class="simple-actions">
+                <a class="simple-link-primary" href="#projects">
+                  查看项目
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M5 12h14m-5-5 5 5-5 5" />
+                  </svg>
+                </a>
+                <a class="simple-link-text" href="assets/1111号_游戏策划简历.pdf" download>
+                  下载简历
+                </a>
+              </div>
+              <div class="simple-meta">
+                <span>2027 届</span>
+                <span>系统策划 / 内容创作</span>
+                <span>深圳 2026.11 可到岗</span>
+              </div>
+            </div>
+
+            <a class="simple-feature" href="#/project/magwitch-workshop">
+              <span class="simple-feature-art">
+                <img
+                  src="assets/magwitch-workshop.jpg"
+                  alt="《魔女的怪物工坊》游戏画面与生态能量转换玩法"
+                />
+              </span>
+              <span class="simple-feature-copy">
+                <small>代表项目</small>
+                <strong>魔女的怪物工坊</strong>
+                <span>生态能量转换、固定点结算与 5 章 50 关内容结构。</span>
+              </span>
+            </a>
+          </div>
+
+          <div class="game-layout" hidden>
             <aside class="player-panel game-panel">
               <div class="panel-topline">
                 <span>CAREER SAVE / 01</span>
@@ -775,6 +819,6 @@
       <section class="project-view" id="project-view" hidden aria-live="polite"></section>
     </main>
 
-    <script type="module" src="js/app.js?v=0.7.1"></script>
+    <script type="module" src="js/app.js?v=0.8.0"></script>
   </body>
 </html>

@@ -1,12 +1,12 @@
 # 1111号个人求职网站
 
-当前版本：`v0.7.1`（Game Design Journal Day 01–08）
+当前版本：`v0.8.0`（简洁版个人作品集）
 
-面向游戏与内容岗位招聘者的零依赖静态作品集。包含顶部标签式主页、6 个项目详情、创作与社群实践、简历下载与联系方式。
+面向游戏与内容岗位招聘者的零依赖静态作品集。包含顶部导航、6 个项目详情、成长档案、游戏策划观察日记、创作与社群实践、简历下载与联系方式。
 
-视觉采用浅蓝线稿与“职业养成游戏”概念：顶部固定标签切换角色、项目、演示、成长、创作和联系，
-首页包含职业成长地图与核心循环拼装台。所有界面图形与动效均由 HTML、CSS 和 JavaScript
-实现，不依赖外部作品集模板或未授权素材。
+视觉采用米白底、深海蓝文字和少量橙色强调。主页以大标题、真实项目画面和留白为主，
+项目与日记页使用开放式排版和细线分隔，不再堆叠卡片。所有界面图形与基础动效均由
+HTML、CSS 和 JavaScript 实现，不依赖外部作品集模板或未授权素材。
 
 《魔女的怪物工坊》案例明确区分本人创意与 AI 执行部分。创作页展示角色社群企划与原创
 视觉实践，并保留图片授权、合作署名和来源边界。
@@ -41,6 +41,7 @@ $env:PORT=8080; node server.mjs
 
 - 页面结构：`site/index.html`
 - 全局样式：`site/css/styles.css`
+- 简洁版覆盖样式：`site/css/simple.css`
 - 项目详情数据与交互：`site/js/app.js`
 - 简历：`site/assets/1111号_游戏策划简历.pdf`
 - 演示视频：`site/assets/system-demo.mp4`
@@ -50,7 +51,8 @@ $env:PORT=8080; node server.mjs
 ## Game Design Journal
 
 知识库源文件位于 `content/journal/`。文章元数据由 `manifest.json` 管理，正文使用
-Markdown，生成器会输出独立静态页面到 `site/journal/`。
+Markdown，生成器会输出独立静态页面到 `site/journal/`。日记页的简洁版覆盖样式位于
+`site/css/simple-journal.css`。
 
 ```powershell
 node scripts/build-journal.mjs

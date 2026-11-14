@@ -21,3 +21,7 @@ Thumbs.db
 # Local QA output
 _qa/
 qa-*.png
+
+# Local tool output and generated concepts
+.evomeme/
+/assets/

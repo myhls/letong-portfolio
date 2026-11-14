@@ -1,5 +1,14 @@
 # Changelog
 
+## v0.8.0 - 2026-11-14
+
+- Replaced the dense dashboard-style homepage with a clean two-column editorial layout.
+- Simplified navigation, project cards, growth sections, content sections and contact sections.
+- Unified Journal pages with the main portfolio's warm white, deep teal and coral visual system.
+- Removed the Journal's dotted background, floating cards and pill-style tags.
+- Improved mobile and tablet typography, spacing and navigation behavior.
+- Kept the existing static architecture, project router, Journal content pipeline and GitHub Pages deployment.
+
 ## v0.7.1 - 2026-11-07
 
 - Standardized the Journal category display name from "生长系统" to "成长系统".
